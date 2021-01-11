@@ -8,7 +8,8 @@ export class PeopleService {
   constructor(private http: Http) { }
 
   get(page = 1) {
-    let url = `https://swapi.co/api/people/?page=${page}`;
+    //let url = `https://swapi.co/api/people/?page=${page}`;
+    let url = `https://www.swapi.tech//api/people/?page=${page}`;
     return this.http.get(url).map(data => data.json());
   }
 
